@@ -44,6 +44,7 @@ import FlipEdgeCanvasExtension from './canvas-extensions/flip-edge-canvas-extens
 import ExportCanvasExtension from './canvas-extensions/export-canvas-extension'
 import FloatingEdgeCanvasExtension from './canvas-extensions/floating-edge-canvas-extension'
 import EdgeHighlightCanvasExtension from './canvas-extensions/edge-highlight-canvas-extension'
+import BodyLinkEdgesCanvasExtension from './canvas-extensions/body-link-edges-canvas-extension'
 
 // Advanced Styles
 import NodeStylesExtension from './canvas-extensions/advanced-styles/node-styles'
@@ -96,6 +97,7 @@ const CANVAS_EXTENSIONS: typeof CanvasExtension[] = [
   VariableBreakpointCanvasExtension,
   EdgeHighlightCanvasExtension,
   AutoFileNodeEdgesCanvasExtension,
+  BodyLinkEdgesCanvasExtension,
   FlipEdgeCanvasExtension,
   ZOrderingCanvasExtension,
   ExportCanvasExtension,

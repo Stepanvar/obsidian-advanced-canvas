@@ -101,6 +101,8 @@ export interface AdvancedCanvasPluginSettingsValues {
   autoFileNodeEdgesFeatureEnabled: boolean
   autoFileNodeEdgesFrontmatterKey: string
 
+  bodyLinkEdgesFeatureEnabled: boolean
+
   edgeHighlightEnabled: boolean
   highlightIncomingEdges: boolean
 }
@@ -193,6 +195,8 @@ export const DEFAULT_SETTINGS_VALUES: AdvancedCanvasPluginSettingsValues = {
 
   autoFileNodeEdgesFeatureEnabled: false,
   autoFileNodeEdgesFrontmatterKey: 'canvas-edges',
+
+  bodyLinkEdgesFeatureEnabled: false,
 
   edgeHighlightEnabled: false,
   highlightIncomingEdges: false,
@@ -317,6 +321,11 @@ export const SETTINGS = {
         parse: (value: string) => value.trim() || 'canvas-edges'
       }
     }
+  },
+  bodyLinkEdgesFeatureEnabled: {
+    label: 'Body link edges',
+    description: 'Create edges based on lines formatted as "- [label] [[file]]" and update notes when edges are made.',
+    children: { }
   },
   portalsFeatureEnabled: {
     label: 'Portals',
