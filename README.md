@@ -24,6 +24,7 @@ This plugin enhances the Obsidian canvas with a wide array of features:
     *   [Full Metadata Cache Support](#full-metadata-cache-support): Integrate canvases with Obsidian's graph view, outgoing links, and backlinks.
     *   [Frontmatter Support](#frontmatter-support): Add custom properties to canvas files.
     *   [Auto File Node Edges](#auto-file-node-edges): Automatically create edges between file nodes based on their frontmatter properties.
+    *   [Body Link Edges](#body-link-edges): Sync edges with lines like `- [label] [[file]]` inside your notes.
     *   [Single Node Links & Embeds](#single-node-links--embeds): Link or embed a single node from a canvas into markdown files.
     *   [Better Default Settings](#better-default-settings): Customize default node sizes, grid alignment, and more.
     *   [Enhanced Readonly Mode](#better-readonly): Finer control over canvas interaction in readonly mode.
@@ -136,6 +137,9 @@ This significantly enhances the ability to manage, organize, and customize your 
 
 ## Auto File Node Edges
 Advanced Canvas can automatically create edges between file nodes based on their frontmatter properties. By default (if enabled), it will create edges to files linked in the `canvas-edges` frontmatter property. This allows you to create fixed relationships between file nodes in your canvas, making it easier to visualize fixed structures or connections between different files.
+
+## Body Link Edges
+Edges can also be synced using list items inside your notes. Lines formatted as `- [label] [[Target Note]]` will automatically create an edge labeled `label` from the note to the target file when the canvas loads. Creating an edge between two file nodes with a label will append the same line to the source file.
 
 ### Single Node Links & Embeds
 Advanced Canvas now allows you to link or embed the content of a *single node* from a `.canvas` file directly into your markdown files. This provides a granular way to reference specific pieces of information within your canvases.
