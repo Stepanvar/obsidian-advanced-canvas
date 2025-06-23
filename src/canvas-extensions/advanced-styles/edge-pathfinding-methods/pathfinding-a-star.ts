@@ -6,18 +6,18 @@ import CanvasHelper from "src/utils/canvas-helper"
 import { CanvasFileNodeData, CanvasGroupNodeData } from "src/@types/AdvancedJsonCanvas"
 
 const MAX_MS_CALCULATION = 100
-const BASIC_DIRECTIONS = [
-  { dx: 1, dy: 0 }, 
-  { dx: -1, dy: 0 }, 
-  { dx: 0, dy: 1 }, 
+const BASIC_DIRECTIONS: ReadonlyArray<{ dx: number; dy: number }> = [
+  { dx: 1, dy: 0 },
+  { dx: -1, dy: 0 },
+  { dx: 0, dy: 1 },
   { dx: 0, dy: -1 },
-] as const
-const DIAGONAL_DIRECTIONS = [
-  { dx: 1, dy: 1 }, 
-  { dx: -1, dy: 1 }, 
-  { dx: 1, dy: -1 }, 
+]
+const DIAGONAL_DIRECTIONS: ReadonlyArray<{ dx: number; dy: number }> = [
+  { dx: 1, dy: 1 },
+  { dx: -1, dy: 1 },
+  { dx: 1, dy: -1 },
   { dx: -1, dy: -1 },
-] as const
+]
 const DIAGONAL_COST = Math.sqrt(2)
 
 const ROUND_PATH_RADIUS = 5

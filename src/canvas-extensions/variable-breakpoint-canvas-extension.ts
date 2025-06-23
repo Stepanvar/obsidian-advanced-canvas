@@ -4,7 +4,7 @@ import CanvasExtension from "./canvas-extension"
 export const VARIABLE_BREAKPOINT_CSS_VAR = '--variable-breakpoint'
 
 export default class VariableBreakpointCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'variableBreakpointFeatureEnabled' as const }
+  isEnabled() { return 'variableBreakpointFeatureEnabled' }
 
   init() {
     /* this.plugin.registerEvent(this.plugin.app.workspace.on(

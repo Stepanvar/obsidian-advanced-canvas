@@ -9,7 +9,7 @@ const BODY_EDGE_ID_PREFIX = "ble"
 const BULLET_LINK_REGEX = /^\s*-\s*\[([^\]]+)\]\s*\[\[([^\]]+)\]\]/
 
 export default class BodyLinkEdgesCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'bodyLinkEdgesFeatureEnabled' as const }
+  isEnabled() { return 'bodyLinkEdgesFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.vault.on('modify', (file: TFile) => {

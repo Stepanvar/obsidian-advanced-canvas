@@ -419,7 +419,7 @@ export default class CanvasHelper {
   static getBestSideForFloatingEdge(sourcePos: Position, target: CanvasNode): Side {
     const targetBBox = target.getBBox()
 
-    const possibleSides = ['top', 'right', 'bottom', 'left'] as const
+    const possibleSides: Side[] = ['top', 'right', 'bottom', 'left']
     const possibleTargetPos = possibleSides.map(side => [side, BBoxHelper.getCenterOfBBoxSide(targetBBox, side)]) as [Side, Position][]
 
     let bestSide: Side | null = null

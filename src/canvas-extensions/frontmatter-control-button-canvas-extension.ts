@@ -4,7 +4,7 @@ import CanvasHelper from "src/utils/canvas-helper"
 import { Notice } from "obsidian"
 
 export default class FrontmatterControlButtonCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'canvasMetadataCompatibilityEnabled' as const }
+  isEnabled() { return 'canvasMetadataCompatibilityEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

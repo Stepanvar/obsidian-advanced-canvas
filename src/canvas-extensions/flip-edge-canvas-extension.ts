@@ -3,7 +3,7 @@ import CanvasExtension from "./canvas-extension"
 import CanvasHelper from "src/utils/canvas-helper"
 
 export default class FlipEdgeCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'flipEdgeFeatureEnabled' as const }
+  isEnabled() { return 'flipEdgeFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

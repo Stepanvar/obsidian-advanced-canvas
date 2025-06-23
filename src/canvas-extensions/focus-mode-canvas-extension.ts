@@ -5,7 +5,7 @@ import CanvasExtension from "./canvas-extension"
 const CONTROL_MENU_FOCUS_TOGGLE_ID = 'focus-mode-toggle'
 
 export default class FocusModeCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'focusModeFeatureEnabled' as const }
+  isEnabled() { return 'focusModeFeatureEnabled' }
 
   init() {
     this.plugin.addCommand({

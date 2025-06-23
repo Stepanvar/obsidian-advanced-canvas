@@ -596,10 +596,10 @@ export const SETTINGS = {
     infoSection: 'focus-mode',
     children: { }
   },
-} as const satisfies {
-  [key in keyof AdvancedCanvasPluginSettingsValues]: SettingsHeading & { 
-    children: { 
-      [key in keyof AdvancedCanvasPluginSettingsValues]?: Setting 
+} as {
+  [key in keyof AdvancedCanvasPluginSettingsValues]: SettingsHeading & {
+    children: {
+      [key in keyof AdvancedCanvasPluginSettingsValues]?: Setting
     }
   }
 }

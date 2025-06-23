@@ -4,7 +4,7 @@ import BBoxHelper from "src/utils/bbox-helper"
 import CanvasExtension from "./canvas-extension"
 
 export default class ZOrderingCanvasExtension  extends CanvasExtension {
-  isEnabled() { return 'zOrderingControlFeatureEnabled' as const }
+  isEnabled() { return 'zOrderingControlFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

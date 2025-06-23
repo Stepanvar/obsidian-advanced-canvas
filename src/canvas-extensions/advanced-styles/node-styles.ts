@@ -7,7 +7,7 @@ import CssStylesConfigManager from "src/managers/css-styles-config-manager"
 export default class NodeStylesExtension extends CanvasExtension {
   cssStylesManager: CssStylesConfigManager<StyleAttribute>
 
-  isEnabled() { return 'nodeStylingFeatureEnabled' as const }
+  isEnabled() { return 'nodeStylingFeatureEnabled' }
 
   init() {
     this.cssStylesManager = new CssStylesConfigManager(this.plugin, 'advanced-canvas-node-style', styleAttributeValidator)

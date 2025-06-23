@@ -5,7 +5,7 @@ import CanvasExtension from "./canvas-extension"
 import { CanvasFileNodeData, CanvasNodeData } from "src/@types/AdvancedJsonCanvas"
 
 export default class AutoResizeNodeCanvasExtension  extends CanvasExtension {
-  isEnabled() { return 'autoResizeNodeFeatureEnabled' as const }
+  isEnabled() { return 'autoResizeNodeFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(
