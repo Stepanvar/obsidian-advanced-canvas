@@ -4,7 +4,7 @@ import CanvasHelper, { MenuOption } from "src/utils/canvas-helper"
 import CanvasExtension from "./canvas-extension"
 
 export default class BetterReadonlyCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'betterReadonlyEnabled' as const }
+  isEnabled() { return 'betterReadonlyEnabled' }
 
   private isMovingToBBox = false
 

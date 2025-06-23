@@ -2,7 +2,7 @@ import { Canvas, CanvasElement } from "src/@types/Canvas"
 import CanvasExtension from "./canvas-extension"
 
 export default class EdgeHighlightCanvasExtension  extends CanvasExtension {
-  isEnabled() { return 'edgeHighlightEnabled' as const }
+  isEnabled() { return 'edgeHighlightEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

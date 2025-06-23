@@ -13,7 +13,7 @@ export default class PresentationCanvasExtension extends CanvasExtension {
   visitedNodeIds: string[] = []
   fullscreenModalObserver: MutationObserver | null = null
 
-  isEnabled() { return 'presentationFeatureEnabled' as const }
+  isEnabled() { return 'presentationFeatureEnabled' }
   
   init() {
     /* Add wrap in slide option to context menu */

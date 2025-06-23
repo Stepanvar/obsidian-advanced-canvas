@@ -7,7 +7,7 @@ import CanvasExtension from "./canvas-extension"
 const ENCAPSULATED_FILE_NODE_SIZE = { width: 300, height: 300 }
 
 export default class EncapsulateCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'canvasEncapsulationEnabled' as const }
+  isEnabled() { return 'canvasEncapsulationEnabled' }
 
   init() {
     /* Add command to encapsulate selection */

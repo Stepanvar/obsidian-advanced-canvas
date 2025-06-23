@@ -5,7 +5,7 @@ import { CanvasData, Side } from "src/@types/AdvancedJsonCanvas"
 import CanvasHelper from "src/utils/canvas-helper"
 
 export default class FloatingEdgeCanvasExtension  extends CanvasExtension {
-  isEnabled() { return 'floatingEdgeFeatureEnabled' as const }
+  isEnabled() { return 'floatingEdgeFeatureEnabled' }
 
   private onPointerMove: (e: MouseEvent) => void
 

@@ -8,7 +8,7 @@ type Direction = 'up' | 'down' | 'left' | 'right'
 const DIRECTIONS = ['up', 'down', 'left', 'right'] as Direction[]
 
 export default class CommandsCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'commandsFeatureEnabled' as const }
+  isEnabled() { return 'commandsFeatureEnabled' }
 
   init() {
     this.plugin.addCommand({

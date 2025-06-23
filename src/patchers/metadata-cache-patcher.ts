@@ -136,7 +136,7 @@ export default class MetadataCachePatcher extends Patcher {
               return acc
             }, {} as Record<string, ExtendedCachedMetadata>)
           }
-        } satisfies ExtendedCachedMetadata
+        } as ExtendedCachedMetadata
 
         // Trigger metadata cache change event
         this.trigger('changed', file, "", this.metadataCache[fileHash])

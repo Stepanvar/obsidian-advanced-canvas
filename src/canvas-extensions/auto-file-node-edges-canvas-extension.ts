@@ -8,7 +8,7 @@ import CanvasHelper from "src/utils/canvas-helper"
 const AUTO_EDGE_ID_PREFIX = "afe"
 
 export default class AutoFileNodeEdgesCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'autoFileNodeEdgesFeatureEnabled' as const }
+  isEnabled() { return 'autoFileNodeEdgesFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.metadataCache.on('changed', (file: TFile) => {

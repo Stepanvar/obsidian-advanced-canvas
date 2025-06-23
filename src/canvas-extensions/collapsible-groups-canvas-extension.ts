@@ -6,7 +6,7 @@ import CanvasExtension from "./canvas-extension"
 import { CanvasData, CanvasGroupNodeData } from "src/@types/AdvancedJsonCanvas"
 
 export default class CollapsibleGroupsCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'collapsibleGroupsFeatureEnabled' as const }
+  isEnabled() { return 'collapsibleGroupsFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

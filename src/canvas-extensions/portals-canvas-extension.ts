@@ -8,7 +8,7 @@ const PORTAL_PADDING = 50
 const MIN_OPEN_PORTAL_SIZE = { width: 200, height: 200 }
 
 export default class PortalsCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'portalsFeatureEnabled' as const }
+  isEnabled() { return 'portalsFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.vault.on('modify', (file: TFile) => {

@@ -8,7 +8,7 @@ import CanvasExtension from "./canvas-extension"
 const MAX_ALLOWED_LOADING_TIME = 10_000
 
 export default class ExportCanvasExtension extends CanvasExtension {
-  isEnabled() { return 'betterExportFeatureEnabled' as const }
+  isEnabled() { return 'betterExportFeatureEnabled' }
 
   init() {
     this.plugin.registerEvent(this.plugin.app.workspace.on(

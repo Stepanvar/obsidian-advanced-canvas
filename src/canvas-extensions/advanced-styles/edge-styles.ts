@@ -19,7 +19,7 @@ const MAX_LIVE_UPDATE_SELECTION_SIZE = 5
 export default class EdgeStylesExtension extends CanvasExtension {
   cssStylesManager: CssStylesConfigManager<StyleAttribute>
 
-  isEnabled() { return 'edgesStylingFeatureEnabled' as const }
+  isEnabled() { return 'edgesStylingFeatureEnabled' }
 
   init() {
     this.cssStylesManager = new CssStylesConfigManager(this.plugin, 'advanced-canvas-edge-style', styleAttributeValidator)
